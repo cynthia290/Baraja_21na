@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contbotones"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/r1"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:id="@+id/txtNum"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/r2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="90dp"
+            android:id="@+id/txtSuma"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@id/r3"
+        android:layout_margin="4dp"
+        >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:id="@+id/b1"
+            android:background="@mipmap/p"
+            android:onClick="clickRecurar"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:id="@+id/b2"
+            android:layout_toRightOf="@id/b1"
+            android:background="@mipmap/p"
+            android:onClick="clickRecurar"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:id="@+id/b3"
+            android:layout_toRightOf="@id/b2"
+            android:background="@mipmap/p"
+            android:onClick="clickRecurar"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:id="@+id/b4"
+            android:background="@mipmap/p"
+            android:layout_toRightOf="@id/b3"
+            android:onClick="clickRecurar"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:id="@+id/b5"
+            android:background="@mipmap/p"
+            android:layout_toRightOf="@id/b4"
+            android:onClick="clickRecurar"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/r3"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Reiniciar"
+            android:id="@+id/btnReiniciar"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Enviar resultado"
+            android:id="@+id/btnEnviar"
+            android:layout_toRightOf="@id/btnReiniciar"
+            android:onClick="clickEnviar"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
